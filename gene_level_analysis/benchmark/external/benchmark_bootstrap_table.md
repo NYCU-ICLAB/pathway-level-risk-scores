@@ -1,0 +1,23 @@
+# Main Table — Pathway-level vs gene-level benchmark (bootstrap 95% CI)
+
+**Conclusion:** at a matched feature budget, pathway-level compact models showed higher point estimates of C-index in all five cancers internally and in four of five cancers externally, with IDC as the external exception; larger gene-level models can recover modest additional discrimination at the cost of substantially more features. We do not claim gene-level models are statistically outperformed (no formal non-inferiority test).
+
+| Cancer | Model | Selected gene-variant features, n | MSK held-out C | GENIE BPC C | Transfer dC |
+|---|---|---|---|---|---|
+| IDC | Pathway compact | 5 | 0.646 (0.611-0.681) | 0.625 (0.589-0.661) | -0.022 |
+| IDC | Gene (matched-size ≤Kc) | 5 | 0.636 (0.603-0.671) | 0.681 (0.652-0.712) | 0.045 |
+| IDC | Gene (pathway genes) | 33 | 0.676 (0.639-0.713) | 0.669 (0.633-0.701) | -0.006 |
+| LUAD | Pathway compact | 5 | 0.623 (0.599-0.647) | 0.611 (0.581-0.643) | -0.012 |
+| LUAD | Gene (matched-size ≤Kc) | 5 | 0.601 (0.576-0.625) | 0.611 (0.579-0.642) | 0.011 |
+| LUAD | Gene (pathway genes) | 54 | 0.648 (0.624-0.670) | 0.622 (0.592-0.651) | -0.026 |
+| PAAD | Pathway compact | 5 | 0.582 (0.550-0.613) | 0.573 (0.540-0.606) | -0.009 |
+| PAAD | Gene (matched-size ≤Kc) | 5 | 0.554 (0.525-0.585) | 0.565 (0.535-0.595) | 0.011 |
+| PAAD | Gene (pathway genes) | 8 | 0.574 (0.543-0.607) | 0.576 (0.540-0.609) | 0.002 |
+| PRAD | Pathway compact | 4 | 0.641 (0.599-0.683) | 0.629 (0.578-0.682) | -0.012 |
+| PRAD | Gene (matched-size ≤Kc) | 4 | 0.596 (0.557-0.637) | 0.616 (0.567-0.668) | 0.021 |
+| PRAD | Gene (pathway genes) | 41 | 0.653 (0.607-0.695) | 0.645 (0.593-0.702) | -0.008 |
+| CRC | Pathway compact | 5 | 0.560 (0.530-0.588) | 0.505 (0.471-0.541) | -0.055 |
+| CRC | Gene (matched-size ≤Kc) | 2 | 0.529 (0.510-0.547) | 0.500 (0.475-0.526) | -0.028 |
+| CRC | Gene (pathway genes) | 46 | 0.568 (0.538-0.598) | 0.609 (0.573-0.643) | 0.041 |
+
+*All models derived on the MSK training split; coefficients and preprocessing parameters fixed before application to the MSK held-out test set and GENIE BPC (no external refitting). C-index = Harrell's concordance; 95% CIs are patient-level bootstrap (B=1000) on each cohort. 'Gene (matched-size ≤Kc)' = unaggregated gene-level model constrained to at most Kc selected gene–variant features; 'Gene (pathway genes)' = unaggregated gene–variant indicators from the same retained-pathway gene set. Uno C-IPCW and time-dependent AUC are in Supplementary. Transfer ΔC = external − internal. IDC = invasive ductal carcinoma.*

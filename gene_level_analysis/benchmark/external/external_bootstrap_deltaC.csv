@@ -1,0 +1,16 @@
+cancer,comparison,ext_delta_c_mean,ci_lo,ci_hi,boot_p
+BRCA,compact_fixed_minus_gene_restricted,-0.0443,-0.0806,-0.0098,0.006
+BRCA,compact_fixed_minus_gene_unrestricted,-0.0164,-0.0525,0.0224,0.382
+BRCA,compact_fixed_minus_gene_capped_K,-0.057,-0.0902,-0.0258,0.0
+LUAD,compact_fixed_minus_gene_restricted,-0.0112,-0.037,0.0144,0.404
+LUAD,compact_fixed_minus_gene_unrestricted,-0.0151,-0.0432,0.0115,0.268
+LUAD,compact_fixed_minus_gene_capped_K,0.0011,-0.0232,0.0256,0.926
+PAAD,compact_fixed_minus_gene_restricted,-0.0038,-0.0395,0.0318,0.876
+PAAD,compact_fixed_minus_gene_unrestricted,-0.0072,-0.0421,0.0269,0.706
+PAAD,compact_fixed_minus_gene_capped_K,0.0096,-0.0225,0.0414,0.546
+PRAD,compact_fixed_minus_gene_restricted,-0.0151,-0.0555,0.0262,0.412
+PRAD,compact_fixed_minus_gene_unrestricted,0.0012,-0.0368,0.04,0.97
+PRAD,compact_fixed_minus_gene_capped_K,0.0154,-0.0254,0.0569,0.48
+CRC,compact_fixed_minus_gene_restricted,-0.1025,-0.143,-0.0616,0.0
+CRC,compact_fixed_minus_gene_unrestricted,-0.1055,-0.1454,-0.0662,0.0
+CRC,compact_fixed_minus_gene_capped_K,0.0066,-0.0298,0.0414,0.712
