@@ -1,0 +1,326 @@
+{
+  "metrics": [
+    {
+      "cancer": "BRCA",
+      "cohort": "GENIE_BPC_BrCa",
+      "arm": "compact_fixed",
+      "n_features_msk": 5,
+      "n_ext": 418,
+      "events_ext": 250,
+      "ext_c_index": 0.6248,
+      "ext_c_ipcw": 0.6777
+    },
+    {
+      "cancer": "BRCA",
+      "cohort": "GENIE_BPC_BrCa",
+      "arm": "gene_restricted",
+      "n_features_msk": 33,
+      "n_ext": 418,
+      "events_ext": 250,
+      "ext_c_index": 0.6691,
+      "ext_c_ipcw": 0.7602
+    },
+    {
+      "cancer": "BRCA",
+      "cohort": "GENIE_BPC_BrCa",
+      "arm": "gene_unrestricted",
+      "n_features_msk": 107,
+      "n_ext": 418,
+      "events_ext": 250,
+      "ext_c_index": 0.6408,
+      "ext_c_ipcw": 0.7184
+    },
+    {
+      "cancer": "BRCA",
+      "cohort": "GENIE_BPC_BrCa",
+      "arm": "gene_capped_K",
+      "n_features_msk": 5,
+      "n_ext": 418,
+      "events_ext": 250,
+      "ext_c_index": 0.6813,
+      "ext_c_ipcw": 0.7625
+    },
+    {
+      "cancer": "LUAD",
+      "cohort": "GENIE_BPC_NSCLC",
+      "arm": "compact_fixed",
+      "n_features_msk": 5,
+      "n_ext": 667,
+      "events_ext": 373,
+      "ext_c_index": 0.6115,
+      "ext_c_ipcw": 0.6148
+    },
+    {
+      "cancer": "LUAD",
+      "cohort": "GENIE_BPC_NSCLC",
+      "arm": "gene_restricted",
+      "n_features_msk": 54,
+      "n_ext": 667,
+      "events_ext": 373,
+      "ext_c_index": 0.6229,
+      "ext_c_ipcw": 0.6357
+    },
+    {
+      "cancer": "LUAD",
+      "cohort": "GENIE_BPC_NSCLC",
+      "arm": "gene_unrestricted",
+      "n_features_msk": 66,
+      "n_ext": 667,
+      "events_ext": 373,
+      "ext_c_index": 0.6261,
+      "ext_c_ipcw": 0.6412
+    },
+    {
+      "cancer": "LUAD",
+      "cohort": "GENIE_BPC_NSCLC",
+      "arm": "gene_capped_K",
+      "n_features_msk": 5,
+      "n_ext": 667,
+      "events_ext": 373,
+      "ext_c_index": 0.6113,
+      "ext_c_ipcw": 0.6195
+    },
+    {
+      "cancer": "PAAD",
+      "cohort": "GENIE_BPC_PANC",
+      "arm": "compact_fixed",
+      "n_features_msk": 5,
+      "n_ext": 399,
+      "events_ext": 335,
+      "ext_c_index": 0.5735,
+      "ext_c_ipcw": 0.5802
+    },
+    {
+      "cancer": "PAAD",
+      "cohort": "GENIE_BPC_PANC",
+      "arm": "gene_restricted",
+      "n_features_msk": 8,
+      "n_ext": 399,
+      "events_ext": 335,
+      "ext_c_index": 0.577,
+      "ext_c_ipcw": 0.5856
+    },
+    {
+      "cancer": "PAAD",
+      "cohort": "GENIE_BPC_PANC",
+      "arm": "gene_unrestricted",
+      "n_features_msk": 11,
+      "n_ext": 399,
+      "events_ext": 335,
+      "ext_c_index": 0.58,
+      "ext_c_ipcw": 0.5893
+    },
+    {
+      "cancer": "PAAD",
+      "cohort": "GENIE_BPC_PANC",
+      "arm": "gene_capped_K",
+      "n_features_msk": 5,
+      "n_ext": 399,
+      "events_ext": 335,
+      "ext_c_index": 0.5637,
+      "ext_c_ipcw": 0.5707
+    },
+    {
+      "cancer": "PRAD",
+      "cohort": "GENIE_BPC_Prostate",
+      "arm": "compact_fixed",
+      "n_features_msk": 4,
+      "n_ext": 395,
+      "events_ext": 153,
+      "ext_c_index": 0.6291,
+      "ext_c_ipcw": 0.6605
+    },
+    {
+      "cancer": "PRAD",
+      "cohort": "GENIE_BPC_Prostate",
+      "arm": "gene_restricted",
+      "n_features_msk": 41,
+      "n_ext": 395,
+      "events_ext": 153,
+      "ext_c_index": 0.6447,
+      "ext_c_ipcw": 0.7024
+    },
+    {
+      "cancer": "PRAD",
+      "cohort": "GENIE_BPC_Prostate",
+      "arm": "gene_unrestricted",
+      "n_features_msk": 31,
+      "n_ext": 395,
+      "events_ext": 153,
+      "ext_c_index": 0.6282,
+      "ext_c_ipcw": 0.6639
+    },
+    {
+      "cancer": "PRAD",
+      "cohort": "GENIE_BPC_Prostate",
+      "arm": "gene_capped_K",
+      "n_features_msk": 4,
+      "n_ext": 395,
+      "events_ext": 153,
+      "ext_c_index": 0.6143,
+      "ext_c_ipcw": 0.6502
+    },
+    {
+      "cancer": "CRC",
+      "cohort": "GENIE_BPC_CRC",
+      "arm": "compact_fixed",
+      "n_features_msk": 5,
+      "n_ext": 730,
+      "events_ext": 359,
+      "ext_c_index": 0.5054,
+      "ext_c_ipcw": 0.4954
+    },
+    {
+      "cancer": "CRC",
+      "cohort": "GENIE_BPC_CRC",
+      "arm": "gene_restricted",
+      "n_features_msk": 46,
+      "n_ext": 730,
+      "events_ext": 359,
+      "ext_c_index": 0.6088,
+      "ext_c_ipcw": 0.6389
+    },
+    {
+      "cancer": "CRC",
+      "cohort": "GENIE_BPC_CRC",
+      "arm": "gene_unrestricted",
+      "n_features_msk": 59,
+      "n_ext": 730,
+      "events_ext": 359,
+      "ext_c_index": 0.6107,
+      "ext_c_ipcw": 0.6494
+    },
+    {
+      "cancer": "CRC",
+      "cohort": "GENIE_BPC_CRC",
+      "arm": "gene_capped_K",
+      "n_features_msk": 2,
+      "n_ext": 730,
+      "events_ext": 359,
+      "ext_c_index": 0.5,
+      "ext_c_ipcw": 0.5128
+    }
+  ],
+  "bootstrap": [
+    {
+      "cancer": "BRCA",
+      "comparison": "compact_fixed_minus_gene_restricted",
+      "ext_delta_c_mean": -0.0443,
+      "ci_lo": -0.0806,
+      "ci_hi": -0.0098,
+      "boot_p": 0.006
+    },
+    {
+      "cancer": "BRCA",
+      "comparison": "compact_fixed_minus_gene_unrestricted",
+      "ext_delta_c_mean": -0.0164,
+      "ci_lo": -0.0525,
+      "ci_hi": 0.0224,
+      "boot_p": 0.382
+    },
+    {
+      "cancer": "BRCA",
+      "comparison": "compact_fixed_minus_gene_capped_K",
+      "ext_delta_c_mean": -0.057,
+      "ci_lo": -0.0902,
+      "ci_hi": -0.0258,
+      "boot_p": 0.0
+    },
+    {
+      "cancer": "LUAD",
+      "comparison": "compact_fixed_minus_gene_restricted",
+      "ext_delta_c_mean": -0.0112,
+      "ci_lo": -0.037,
+      "ci_hi": 0.0144,
+      "boot_p": 0.404
+    },
+    {
+      "cancer": "LUAD",
+      "comparison": "compact_fixed_minus_gene_unrestricted",
+      "ext_delta_c_mean": -0.0151,
+      "ci_lo": -0.0432,
+      "ci_hi": 0.0115,
+      "boot_p": 0.268
+    },
+    {
+      "cancer": "LUAD",
+      "comparison": "compact_fixed_minus_gene_capped_K",
+      "ext_delta_c_mean": 0.0011,
+      "ci_lo": -0.0232,
+      "ci_hi": 0.0256,
+      "boot_p": 0.926
+    },
+    {
+      "cancer": "PAAD",
+      "comparison": "compact_fixed_minus_gene_restricted",
+      "ext_delta_c_mean": -0.0038,
+      "ci_lo": -0.0395,
+      "ci_hi": 0.0318,
+      "boot_p": 0.876
+    },
+    {
+      "cancer": "PAAD",
+      "comparison": "compact_fixed_minus_gene_unrestricted",
+      "ext_delta_c_mean": -0.0072,
+      "ci_lo": -0.0421,
+      "ci_hi": 0.0269,
+      "boot_p": 0.706
+    },
+    {
+      "cancer": "PAAD",
+      "comparison": "compact_fixed_minus_gene_capped_K",
+      "ext_delta_c_mean": 0.0096,
+      "ci_lo": -0.0225,
+      "ci_hi": 0.0414,
+      "boot_p": 0.546
+    },
+    {
+      "cancer": "PRAD",
+      "comparison": "compact_fixed_minus_gene_restricted",
+      "ext_delta_c_mean": -0.0151,
+      "ci_lo": -0.0555,
+      "ci_hi": 0.0262,
+      "boot_p": 0.412
+    },
+    {
+      "cancer": "PRAD",
+      "comparison": "compact_fixed_minus_gene_unrestricted",
+      "ext_delta_c_mean": 0.0012,
+      "ci_lo": -0.0368,
+      "ci_hi": 0.04,
+      "boot_p": 0.97
+    },
+    {
+      "cancer": "PRAD",
+      "comparison": "compact_fixed_minus_gene_capped_K",
+      "ext_delta_c_mean": 0.0154,
+      "ci_lo": -0.0254,
+      "ci_hi": 0.0569,
+      "boot_p": 0.48
+    },
+    {
+      "cancer": "CRC",
+      "comparison": "compact_fixed_minus_gene_restricted",
+      "ext_delta_c_mean": -0.1025,
+      "ci_lo": -0.143,
+      "ci_hi": -0.0616,
+      "boot_p": 0.0
+    },
+    {
+      "cancer": "CRC",
+      "comparison": "compact_fixed_minus_gene_unrestricted",
+      "ext_delta_c_mean": -0.1055,
+      "ci_lo": -0.1454,
+      "ci_hi": -0.0662,
+      "boot_p": 0.0
+    },
+    {
+      "cancer": "CRC",
+      "comparison": "compact_fixed_minus_gene_capped_K",
+      "ext_delta_c_mean": 0.0066,
+      "ci_lo": -0.0298,
+      "ci_hi": 0.0414,
+      "boot_p": 0.712
+    }
+  ]
+}

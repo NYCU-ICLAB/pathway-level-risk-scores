@@ -1,0 +1,551 @@
+{
+  "metrics": [
+    {
+      "c_index": 0.6463994669673517,
+      "c_ipcw": 0.6672785289953784,
+      "td_auc_24": 0.6838101128681315,
+      "acc_24": 0.5960854092526691,
+      "cancer": "BRCA",
+      "arm": "compact_fixed",
+      "n_features": 5
+    },
+    {
+      "c_index": 0.6476910460765722,
+      "c_ipcw": 0.6668612992671421,
+      "td_auc_24": 0.6829883851690034,
+      "acc_24": 0.5889679715302492,
+      "cancer": "BRCA",
+      "arm": "compact_refit",
+      "n_features": 5
+    },
+    {
+      "c_index": 0.6751473527753575,
+      "c_ipcw": 0.7031114444270311,
+      "td_auc_24": 0.7255325097025183,
+      "acc_24": 0.6441281138790036,
+      "cancer": "BRCA",
+      "arm": "gene_restricted",
+      "n_features": 33
+    },
+    {
+      "c_index": 0.6950591973758393,
+      "c_ipcw": 0.7253707668778262,
+      "td_auc_24": 0.7492775035854096,
+      "acc_24": 0.6530249110320284,
+      "cancer": "BRCA",
+      "arm": "gene_unrestricted",
+      "n_features": 107
+    },
+    {
+      "c_index": 0.6365024857772539,
+      "c_ipcw": 0.672607999735477,
+      "td_auc_24": 0.6874709385833875,
+      "acc_24": 0.594306049822064,
+      "cancer": "BRCA",
+      "arm": "gene_capped_K",
+      "n_features": 5
+    },
+    {
+      "c_index": 0.6230384687688609,
+      "c_ipcw": 0.6338644484036831,
+      "td_auc_24": 0.6446585181163207,
+      "acc_24": 0.604602510460251,
+      "cancer": "LUAD",
+      "arm": "compact_fixed",
+      "n_features": 5
+    },
+    {
+      "c_index": 0.6216384351284766,
+      "c_ipcw": 0.6321803630299396,
+      "td_auc_24": 0.6436266591844483,
+      "acc_24": 0.604602510460251,
+      "cancer": "LUAD",
+      "arm": "compact_refit",
+      "n_features": 5
+    },
+    {
+      "c_index": 0.6477196271853882,
+      "c_ipcw": 0.6578983866772761,
+      "td_auc_24": 0.6688161187710294,
+      "acc_24": 0.6098326359832636,
+      "cancer": "LUAD",
+      "arm": "gene_restricted",
+      "n_features": 54
+    },
+    {
+      "c_index": 0.6477579673292503,
+      "c_ipcw": 0.6594951841497365,
+      "td_auc_24": 0.6721219012968228,
+      "acc_24": 0.6014644351464435,
+      "cancer": "LUAD",
+      "arm": "gene_unrestricted",
+      "n_features": 66
+    },
+    {
+      "c_index": 0.6003138944681357,
+      "c_ipcw": 0.6032336638239222,
+      "td_auc_24": 0.6029712588628497,
+      "acc_24": 0.6056485355648535,
+      "cancer": "LUAD",
+      "arm": "gene_capped_K",
+      "n_features": 5
+    },
+    {
+      "c_index": 0.5817012950712755,
+      "c_ipcw": 0.5895305180888779,
+      "td_auc_24": 0.6485970179962965,
+      "acc_24": 0.6027397260273972,
+      "cancer": "PAAD",
+      "arm": "compact_fixed",
+      "n_features": 5
+    },
+    {
+      "c_index": 0.5805273455697382,
+      "c_ipcw": 0.588112683335714,
+      "td_auc_24": 0.6434326481325916,
+      "acc_24": 0.6095890410958904,
+      "cancer": "PAAD",
+      "arm": "compact_refit",
+      "n_features": 5
+    },
+    {
+      "c_index": 0.5743175253889873,
+      "c_ipcw": 0.584388453984595,
+      "td_auc_24": 0.6462412478848995,
+      "acc_24": 0.5844748858447488,
+      "cancer": "PAAD",
+      "arm": "gene_restricted",
+      "n_features": 8
+    },
+    {
+      "c_index": 0.579455883723097,
+      "c_ipcw": 0.5899116503962168,
+      "td_auc_24": 0.6554569587808771,
+      "acc_24": 0.6050228310502284,
+      "cancer": "PAAD",
+      "arm": "gene_unrestricted",
+      "n_features": 11
+    },
+    {
+      "c_index": 0.5550824559768937,
+      "c_ipcw": 0.5622847873043851,
+      "td_auc_24": 0.6193644189561267,
+      "acc_24": 0.4840182648401826,
+      "cancer": "PAAD",
+      "arm": "gene_capped_K",
+      "n_features": 5
+    },
+    {
+      "c_index": 0.6407242413549753,
+      "c_ipcw": 0.6396343497304524,
+      "td_auc_24": 0.6489074124875049,
+      "acc_24": 0.6410835214446953,
+      "cancer": "PRAD",
+      "arm": "compact_fixed",
+      "n_features": 4
+    },
+    {
+      "c_index": 0.641724006116208,
+      "c_ipcw": 0.6403024601462437,
+      "td_auc_24": 0.650676074546443,
+      "acc_24": 0.6455981941309256,
+      "cancer": "PRAD",
+      "arm": "compact_refit",
+      "n_features": 4
+    },
+    {
+      "c_index": 0.6527949306045636,
+      "c_ipcw": 0.6519459518119165,
+      "td_auc_24": 0.6703365347104915,
+      "acc_24": 0.5936794582392777,
+      "cancer": "PRAD",
+      "arm": "gene_restricted",
+      "n_features": 41
+    },
+    {
+      "c_index": 0.698563573276876,
+      "c_ipcw": 0.6978800628213946,
+      "td_auc_24": 0.712813357019384,
+      "acc_24": 0.618510158013544,
+      "cancer": "PRAD",
+      "arm": "gene_unrestricted",
+      "n_features": 31
+    },
+    {
+      "c_index": 0.5949408962597036,
+      "c_ipcw": 0.6005810820232511,
+      "td_auc_24": 0.6168410227541921,
+      "acc_24": 0.672686230248307,
+      "cancer": "PRAD",
+      "arm": "gene_capped_K",
+      "n_features": 4
+    },
+    {
+      "c_index": 0.5591489111544665,
+      "c_ipcw": 0.5554546927701381,
+      "td_auc_24": 0.5604183628241485,
+      "acc_24": 0.519159456118665,
+      "cancer": "CRC",
+      "arm": "compact_fixed",
+      "n_features": 5
+    },
+    {
+      "c_index": 0.5699106070125547,
+      "c_ipcw": 0.5706318192431169,
+      "td_auc_24": 0.5761794811266165,
+      "acc_24": 0.5352286773794809,
+      "cancer": "CRC",
+      "arm": "compact_refit",
+      "n_features": 5
+    },
+    {
+      "c_index": 0.5681139292130992,
+      "c_ipcw": 0.5671382692807303,
+      "td_auc_24": 0.5675824151956688,
+      "acc_24": 0.5265760197775031,
+      "cancer": "CRC",
+      "arm": "gene_restricted",
+      "n_features": 46
+    },
+    {
+      "c_index": 0.5744188353559737,
+      "c_ipcw": 0.5744303503336041,
+      "td_auc_24": 0.5749445262612736,
+      "acc_24": 0.5339925834363412,
+      "cancer": "CRC",
+      "arm": "gene_unrestricted",
+      "n_features": 59
+    },
+    {
+      "c_index": 0.5283702405490707,
+      "c_ipcw": 0.5254276903177959,
+      "td_auc_24": 0.5304883027856899,
+      "acc_24": 0.6674907292954264,
+      "cancer": "CRC",
+      "arm": "gene_capped_K",
+      "n_features": 2
+    }
+  ],
+  "bootstrap": [
+    {
+      "delta_c_mean": -0.0012715131756237392,
+      "delta_c_ci_lo": -0.005781109951604915,
+      "delta_c_ci_hi": 0.0032844439425200435,
+      "boot_p_two_sided": 0.612,
+      "c_ref_ci": [
+        0.6110507288014929,
+        0.6805451459865431
+      ],
+      "c_other_ci": [
+        0.6120449681618442,
+        0.68157383273663
+      ],
+      "cancer": "BRCA",
+      "comparison": "compact_fixed_minus_compact_refit"
+    },
+    {
+      "delta_c_mean": -0.02980117809541063,
+      "delta_c_ci_lo": -0.05887581825256239,
+      "delta_c_ci_hi": 0.00039287801650981775,
+      "boot_p_two_sided": 0.054,
+      "c_ref_ci": [
+        0.6088152455428336,
+        0.6797470281264483
+      ],
+      "c_other_ci": [
+        0.6396970469773414,
+        0.7100199779105912
+      ],
+      "cancer": "BRCA",
+      "comparison": "compact_fixed_minus_gene_restricted"
+    },
+    {
+      "delta_c_mean": -0.049341533991877955,
+      "delta_c_ci_lo": -0.08287325758051572,
+      "delta_c_ci_hi": -0.015307565430500665,
+      "boot_p_two_sided": 0.004,
+      "c_ref_ci": [
+        0.6093540344213757,
+        0.6816915473990168
+      ],
+      "c_other_ci": [
+        0.6608828837773266,
+        0.728620023884101
+      ],
+      "cancer": "BRCA",
+      "comparison": "compact_fixed_minus_gene_unrestricted"
+    },
+    {
+      "delta_c_mean": 0.00975081683508338,
+      "delta_c_ci_lo": -0.015466069971535493,
+      "delta_c_ci_hi": 0.03351029296563391,
+      "boot_p_two_sided": 0.462,
+      "c_ref_ci": [
+        0.6084697237019235,
+        0.6824676704654474
+      ],
+      "c_other_ci": [
+        0.5986494893109965,
+        0.6727615316980636
+      ],
+      "cancer": "BRCA",
+      "comparison": "compact_fixed_minus_gene_capped_K"
+    },
+    {
+      "delta_c_mean": 0.0014155462538122437,
+      "delta_c_ci_lo": -0.0015589410463048904,
+      "delta_c_ci_hi": 0.004405016959898045,
+      "boot_p_two_sided": 0.352,
+      "c_ref_ci": [
+        0.5991929291436451,
+        0.6478073607844692
+      ],
+      "c_other_ci": [
+        0.5975494700502956,
+        0.6468750741823965
+      ],
+      "cancer": "LUAD",
+      "comparison": "compact_fixed_minus_compact_refit"
+    },
+    {
+      "delta_c_mean": -0.024803721279760764,
+      "delta_c_ci_lo": -0.04531251344747861,
+      "delta_c_ci_hi": -0.0041558541519663575,
+      "boot_p_two_sided": 0.01,
+      "c_ref_ci": [
+        0.5973335537849556,
+        0.6470020927176614
+      ],
+      "c_other_ci": [
+        0.6238620113344615,
+        0.6713965235762969
+      ],
+      "cancer": "LUAD",
+      "comparison": "compact_fixed_minus_gene_restricted"
+    },
+    {
+      "delta_c_mean": -0.024730502614267704,
+      "delta_c_ci_lo": -0.04540010090999073,
+      "delta_c_ci_hi": -0.002566767159195384,
+      "boot_p_two_sided": 0.032,
+      "c_ref_ci": [
+        0.5986896675876572,
+        0.6472777573883103
+      ],
+      "c_other_ci": [
+        0.622667843308284,
+        0.6709160687892807
+      ],
+      "cancer": "LUAD",
+      "comparison": "compact_fixed_minus_gene_unrestricted"
+    },
+    {
+      "delta_c_mean": 0.022393301064125872,
+      "delta_c_ci_lo": 0.0027530424398399507,
+      "delta_c_ci_hi": 0.04250799928546833,
+      "boot_p_two_sided": 0.028,
+      "c_ref_ci": [
+        0.5990859633227336,
+        0.6471108969833911
+      ],
+      "c_other_ci": [
+        0.575250996885275,
+        0.6254153754241538
+      ],
+      "cancer": "LUAD",
+      "comparison": "compact_fixed_minus_gene_capped_K"
+    },
+    {
+      "delta_c_mean": 0.0011242728020631873,
+      "delta_c_ci_lo": -0.0013058327465944903,
+      "delta_c_ci_hi": 0.003421334961240865,
+      "boot_p_two_sided": 0.33,
+      "c_ref_ci": [
+        0.5507199743908683,
+        0.616095452349854
+      ],
+      "c_other_ci": [
+        0.5496087981596627,
+        0.6149046071503131
+      ],
+      "cancer": "PAAD",
+      "comparison": "compact_fixed_minus_compact_refit"
+    },
+    {
+      "delta_c_mean": 0.007435842373480412,
+      "delta_c_ci_lo": -0.020759320750975804,
+      "delta_c_ci_hi": 0.035154634350403134,
+      "boot_p_two_sided": 0.594,
+      "c_ref_ci": [
+        0.5503611971055977,
+        0.613641164345876
+      ],
+      "c_other_ci": [
+        0.5426942172676091,
+        0.6090133234325005
+      ],
+      "cancer": "PAAD",
+      "comparison": "compact_fixed_minus_gene_restricted"
+    },
+    {
+      "delta_c_mean": 0.0021476735273745317,
+      "delta_c_ci_lo": -0.02378648734177631,
+      "delta_c_ci_hi": 0.030156450741466258,
+      "boot_p_two_sided": 0.888,
+      "c_ref_ci": [
+        0.5495245084267075,
+        0.6116135703973944
+      ],
+      "c_other_ci": [
+        0.5475078316092797,
+        0.6124462989981279
+      ],
+      "cancer": "PAAD",
+      "comparison": "compact_fixed_minus_gene_unrestricted"
+    },
+    {
+      "delta_c_mean": 0.027311982594206474,
+      "delta_c_ci_lo": -0.0005219513438298877,
+      "delta_c_ci_hi": 0.056288125490388044,
+      "boot_p_two_sided": 0.054,
+      "c_ref_ci": [
+        0.5531994025829086,
+        0.613285727574871
+      ],
+      "c_other_ci": [
+        0.5276878757214186,
+        0.5839228255002538
+      ],
+      "cancer": "PAAD",
+      "comparison": "compact_fixed_minus_gene_capped_K"
+    },
+    {
+      "delta_c_mean": -0.001029344510797143,
+      "delta_c_ci_lo": -0.008805014249000037,
+      "delta_c_ci_hi": 0.00651037570585048,
+      "boot_p_two_sided": 0.816,
+      "c_ref_ci": [
+        0.5969663659979161,
+        0.6805389216275063
+      ],
+      "c_other_ci": [
+        0.5992625961882947,
+        0.6842907825848383
+      ],
+      "cancer": "PRAD",
+      "comparison": "compact_fixed_minus_compact_refit"
+    },
+    {
+      "delta_c_mean": -0.01187419519572798,
+      "delta_c_ci_lo": -0.05307278446993632,
+      "delta_c_ci_hi": 0.02894334292901592,
+      "boot_p_two_sided": 0.564,
+      "c_ref_ci": [
+        0.5962496295942041,
+        0.6824806006728682
+      ],
+      "c_other_ci": [
+        0.611375387429964,
+        0.6952665724622669
+      ],
+      "cancer": "PRAD",
+      "comparison": "compact_fixed_minus_gene_restricted"
+    },
+    {
+      "delta_c_mean": -0.058792509353864326,
+      "delta_c_ci_lo": -0.0993608210443373,
+      "delta_c_ci_hi": -0.014882888733942463,
+      "boot_p_two_sided": 0.004,
+      "c_ref_ci": [
+        0.5982401566386149,
+        0.6812956621883378
+      ],
+      "c_other_ci": [
+        0.6575002277968361,
+        0.7398241548123484
+      ],
+      "cancer": "PRAD",
+      "comparison": "compact_fixed_minus_gene_unrestricted"
+    },
+    {
+      "delta_c_mean": 0.04499685779169352,
+      "delta_c_ci_lo": -0.002824388474681325,
+      "delta_c_ci_hi": 0.09059985699217461,
+      "boot_p_two_sided": 0.058,
+      "c_ref_ci": [
+        0.5974802898869389,
+        0.6869548828494548
+      ],
+      "c_other_ci": [
+        0.5573605058110491,
+        0.63327307138291
+      ],
+      "cancer": "PRAD",
+      "comparison": "compact_fixed_minus_gene_capped_K"
+    },
+    {
+      "delta_c_mean": -0.011045958824839736,
+      "delta_c_ci_lo": -0.02667125833022079,
+      "delta_c_ci_hi": 0.00399731366220421,
+      "boot_p_two_sided": 0.182,
+      "c_ref_ci": [
+        0.529135240422139,
+        0.5896234678028455
+      ],
+      "c_other_ci": [
+        0.5414605622448312,
+        0.6000461920270654
+      ],
+      "cancer": "CRC",
+      "comparison": "compact_fixed_minus_compact_refit"
+    },
+    {
+      "delta_c_mean": -0.009579820073837038,
+      "delta_c_ci_lo": -0.044946438400663584,
+      "delta_c_ci_hi": 0.026142024054795654,
+      "boot_p_two_sided": 0.62,
+      "c_ref_ci": [
+        0.5276930967088461,
+        0.5900742741787184
+      ],
+      "c_other_ci": [
+        0.5374985465471916,
+        0.5980079383612205
+      ],
+      "cancer": "CRC",
+      "comparison": "compact_fixed_minus_gene_restricted"
+    },
+    {
+      "delta_c_mean": -0.01575455624643332,
+      "delta_c_ci_lo": -0.05279372944782633,
+      "delta_c_ci_hi": 0.02112436207657596,
+      "boot_p_two_sided": 0.388,
+      "c_ref_ci": [
+        0.5275070569229718,
+        0.59213053925467
+      ],
+      "c_other_ci": [
+        0.5434565667504977,
+        0.604885529559024
+      ],
+      "cancer": "CRC",
+      "comparison": "compact_fixed_minus_gene_unrestricted"
+    },
+    {
+      "delta_c_mean": 0.030678014667107255,
+      "delta_c_ci_lo": 0.0034463832043015955,
+      "delta_c_ci_hi": 0.05781149735798496,
+      "boot_p_two_sided": 0.02,
+      "c_ref_ci": [
+        0.5276530871729745,
+        0.5897886882368183
+      ],
+      "c_other_ci": [
+        0.5075345330650863,
+        0.5481237436511498
+      ],
+      "cancer": "CRC",
+      "comparison": "compact_fixed_minus_gene_capped_K"
+    }
+  ]
+}
