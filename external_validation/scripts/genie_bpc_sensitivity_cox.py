@@ -60,9 +60,9 @@ FORMULA = ROOT / "external_validation" / "zscore_params" / "compact_score_formul
 COHORTS = {  # cohort_key -> (cancer, subdir, features_csv_name)
     "BrCa":     ("BRCA", "BrCa",     "GENIE_BPC_BrCa_pathway_features.csv"),
     "NSCLC":    ("LUAD", "NSCLC",    "GENIE_BPC_NSCLC_pathway_features.csv"),
-    "CRC":      ("CRC",  "CRC",      "GENIE_BPC_CRC_pathway_features.csv"),
     "PANC":     ("PAAD", "PANC",     "GENIE_BPC_PANC_pathway_features.csv"),
     "Prostate": ("PRAD", "Prostate", "GENIE_BPC_Prostate_pathway_features.csv"),
+    "CRC":      ("CRC",  "CRC",      "GENIE_BPC_CRC_pathway_features.csv"),
 }
 DISPLAY_CANCER = {"BRCA": "IDC"}
 
@@ -162,6 +162,9 @@ def load_cohort(cohort_key, formula):
     feats = [f["name"] for f in spec["features"]]
     betas = np.array([float(f["beta"]) for f in spec["features"]])
     feat["compact_score"] = (feat[feats].values * betas).sum(axis=1)
+    # report HR per 1-SD of the compact score (per-cohort SD), consistent with the main-text
+    # per-1-SD hazard ratios rather than the raw per-unit linear predictor
+    feat["compact_score"] = feat["compact_score"] / feat["compact_score"].std(ddof=1)
 
     pat = pd.read_csv(RAW_BASE / subdir / "clinical_patient_nonMSK.csv", low_memory=False)
     df = feat.copy()
@@ -302,7 +305,7 @@ def plot_forest(rows, title, xlabel, path, label_col, group_col=None):
         return
     label_values = df[label_col].astype(str).map(lambda x: DISPLAY_CANCER.get(x, x))
     if group_col:
-        df["label"] = df[group_col].astype(str) + " | " + label_values
+        df["label"] = label_values + " | " + df[group_col].astype(str)
     else:
         df["label"] = label_values
     df = df.iloc[::-1].reset_index(drop=True)
@@ -360,11 +363,11 @@ def main():
     pd.concat(tx_audit, ignore_index=True).to_csv(
         OUT_DIR / "B3_treatment_classification_audit.csv", index=False)
 
+    b2_stage_rows = [r for r in b2_rows if r and r.get("stage_grp") != "Overall"]
     plot_forest(
-        b2_rows,
-        title="GENIE BPC: compact_score HR by stage subgroup (5 cohorts)\n"
-              "(adjusted for age, sex, met_sample, inst)",
-        xlabel="HR per +1 unit compact_score",
+        b2_stage_rows,
+        title=r"$\bf{c}$  External GENIE BPC: compact score HR by stage subgroup",
+        xlabel="HR per 1-SD increase in compact score",
         path=OUT_DIR / "B2_stage_forest.png",
         label_col="cancer", group_col="stage_grp",
     )
@@ -374,7 +377,7 @@ def main():
         b3_with_tx,
         title="GENIE BPC: compact_score HR after treatment adjustment (5 cohorts)\n"
               "(adjusted for age, sex, stage, met_sample, inst + tx dummies)",
-        xlabel="HR per +1 unit compact_score",
+        xlabel="HR per 1-SD increase in compact score",
         path=OUT_DIR / "B3_treatment_forest.png",
         label_col="cancer",
     )

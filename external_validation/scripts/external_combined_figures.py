@@ -80,7 +80,7 @@ def plot_calibration():
     for j in range(len(cohorts), len(axes)):
         axes[j].axis("off")
     fig.suptitle("GENIE BPC external calibration — compact score quintiles",
-                 fontsize=12)
+                 fontsize=12, fontweight="bold")
     fig.savefig(OUT_DIR / "calibration_combined.png", dpi=220)
     fig.savefig(OUT_DIR / "calibration_combined.pdf")
     plt.close(fig)
